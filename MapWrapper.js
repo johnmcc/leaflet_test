@@ -14,8 +14,5 @@ MapWrapper.prototype.goTo = function(lat, lng){
 MapWrapper.prototype.addMarker = function(lat, lng, text){
     L.marker([lat, lng])
     .bindPopup(text)
-    .on("click", function(){
-        this.openPopup();
-    })
     .addTo(this.map);
 }
